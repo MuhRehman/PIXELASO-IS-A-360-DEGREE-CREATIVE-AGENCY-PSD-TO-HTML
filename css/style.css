@@ -9,9 +9,9 @@ html {
   --White-TextColor: #333333;
   --Divider-color: #000000;
   --Divider-bgColor: #fff;
-  --Divider-bgColor-Blue: #006699;
+  --Divider-bgColor-Blue: #01589f;
   --Divider-textPadding: 30px;
-  --Divider-line: 2px solid #006699;
+  --Divider-line: 2px solid #01589f;
   --Divider-line-White: 2px solid #ffffff;
 }
 @font-face {
@@ -41,6 +41,14 @@ html {
 @font-face {
   font-family: Lato-Light;
   src: url(fonts/Lato-Light.ttf);
+}
+@font-face {
+  font-family: Lato-Heavy;
+  src: url(fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: Lato-Black;
+  src: url(fonts/Lato-Black.ttf);
 }
 /* -------------------------------------------------------------- Header-Styling-Start */
 .banner-image {
@@ -91,7 +99,10 @@ html {
   text-align: center;
   white-space: nowrap;
 }
-
+#about-pixelaso {
+  margin-top: 62px;
+  margin-bottom: 72px;
+}
 .Divider:before {
   border-bottom: var(--Divider-line);
   content: "";
@@ -138,6 +149,12 @@ html {
   font-size: 32px;
   color: 0 var(--Black-TextColor);
 }
+.about-inner-text p {
+  font-family: Lato-Regular;
+  font-size: 20px;
+  color: #5f5f5f;
+  font-weight: 500;
+}
 .about-inner-text {
   margin-left: 62px;
   margin-right: 62px;
@@ -145,7 +162,11 @@ html {
 /* -------------------------------------------------------------- About-Pixelaso-Section-Styling-End */
 /* -------------------------------------------------------------- Services-Pixelaso-Section-Styling-Start */
 #services-pixelaso {
-  background-color: #006699;
+  background-color: #01589f;
+}
+.services-pixelaso-inner {
+  margin-top: 1262px;
+  margin-bottom: 72px;
 }
 .Divider-Blue {
   background-color: var(--Divider-bgColor-Blue);
@@ -153,6 +174,17 @@ html {
   position: relative;
   text-align: center;
   white-space: nowrap;
+}
+.Divider-blue-text {
+  background-color: inherit;
+  display: inline-block;
+  color: white;
+  font-family: Lato-Regular;
+  font-size: 32px;
+  text-transform: uppercase;
+  padding: 0 var(--Divider-textPadding);
+  position: relative;
+  z-index: 1;
 }
 .Divider-Blue:before {
   border-bottom: var(--Divider-line-White);
@@ -162,4 +194,171 @@ html {
   top: 50%;
   width: 100%;
 }
+.about-blue-heading {
+  color: #fff;
+  font-family: Lato-Light;
+  text-transform: uppercase;
+}
+.about-blue-heading .bold-text {
+  font-family: Lato-Black;
+
+  color: #ffffff;
+}
+
+.card {
+  border: none;
+  background-color: transparent !important;
+}
+.card .card-img-top-custom img {
+}
+.card .card-img-top-custom {
+  margin-left: auto;
+  margin-right: auto;
+  background: #0099ff;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+  padding: 30px;
+}
+.card .card-body .card-title {
+  font-family: Lato-Heavy;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-size: 22px;
+}
+.card .card-body h6 {
+  font-family: Lato-Regular;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgb(246, 246, 246);
+  letter-spacing: 0.1px;
+  margin-top: 16px;
+}
+.service-footer h3 {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 34px;
+  font-family: Lato-Light;
+  color: #0099ff;
+}
+
+.service-footer h3 .bold-text {
+  font-family: Lato-Black;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 34px;
+}
+.service-footer p {
+  font-size: 19px;
+  font-family: Lato-Light;
+  color: #ffffff;
+}
+.service-footer {
+  padding-top: 82px;
+  padding-bottom: 22px;
+}
 /* -------------------------------------------------------------- Services-Pixelaso-Section-Styling-End */
+/* -------------------------------------------------------------- Why-Pixelaso-Section-Styling-Start */
+.Why-Pixelaso-Heading {
+  text-transform: uppercase;
+  font-family: Lato-Light;
+  color: #000000;
+  margin: 32px;
+}
+
+.Why-Pixelaso-Heading .bold-text {
+  font-family: Lato-Regular;
+  font-weight: 600;
+  color: #000000;
+}
+.Why-Pixelaso-Heading .blue-text {
+  font-family: Lato-Regular;
+
+  font-weight: 700;
+  color: #01589f;
+}
+.custom-card-body {
+  margin-top: 5vh;
+  margin-left: 15%;
+}
+.custom-left-card-body {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 5vh;
+  margin-right: 15%;
+}
+.card-title-divider::after {
+  border-bottom: var(--Divider-line);
+  content: "";
+  display: block;
+
+  margin-top: 12px;
+  width: 10%;
+}
+.custom-card-body h5 {
+  color: #000000;
+}
+.card-text-custom {
+  color: #5f5f5f;
+  margin-top: 12px;
+}
+/* -------------------------------------------------------------- Testimonial -Section-Styling-Start */
+#testimonial {
+  background-color: #f1f1f1;
+}
+/* -------------------------------------------------------------- Testimonial -Section-Styling-End */
+/* -------------------------------------------------------------- Why-Pixelaso-Section-Styling-End */
+/* -------------------------------------------------------------- Footer-Section-Styling-Start */
+
+footer {
+  background-color: #01589f;
+  padding-top: 52px;
+  padding-bottom: 32px;
+}
+.footer-icons i {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 12px;
+  /* width: 4%; */
+  color: white;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.email i {
+  color: white;
+  margin-right: 5px;
+}
+.phone i {
+  color: white;
+  margin-right: 5px;
+}
+.email {
+  margin-top: 22px;
+  color: white;
+  font-size: 13px;
+  font-family: Lato-Light;
+}
+.phone {
+  margin-top: 22px;
+  color: white;
+  font-size: 13px;
+  font-family: Lato-Light;
+}
+.footer-bottom-text {
+  margin-top: 32px;
+  color: white;
+  font-size: 14px;
+  font-family: Lato-Light;
+}
+.footer-inner-text {
+  margin-top: 32px;
+  color: white;
+  font-size: 24px;
+  font-family: Lato-Light;
+}
+/* -------------------------------------------------------------- Footer-Section-Styling-End */
